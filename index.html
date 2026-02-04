@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dal Lake — The Jewel of Kashmir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="logo" href="#">Dal Lake</a>
+        <button id="nav-toggle" aria-label="toggle navigation">☰</button>
+        <nav class="main-nav" id="main-nav">
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h1>Dal Lake</h1>
+        <p class="tagline">Mirror of the mountains — a timeless calm in Kashmir.</p>
+        <a class="btn" href="#gallery">Explore the beauty</a>
+      </div>
+    </section>
+
+    <main>
+      <section id="about" class="about container">
+        <div class="about-media">
+          <img src="https://source.unsplash.com/800x600/?shikara,dal-lake" alt="Shikara on Dal Lake">
+        </div>
+        <div class="about-content">
+          <h2>About Dal Lake</h2>
+          <p>Fringed by the Zabarwan mountains and cradled by Mughal gardens, Dal Lake is an iconic symbol of Kashmir's natural beauty. From sunrise reflections to shikara rides and floating gardens, every moment at Dal feels like a painting.</p>
+          <p class="muted">Best visited at dawn for soft light and quiet waters.</p>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery container">
+        <h2>Gallery</h2>
+        <div class="grid">
+          <img src="https://source.unsplash.com/800x600/?dal-lake,kashmir" alt="Dal Lake scene">
+          <img src="https://source.unsplash.com/800x600/?shikara,kashmir" alt="Shikara boat">
+          <img src="https://source.unsplash.com/800x600/?mughal-garden" alt="Mughal gardens">
+          <img src="https://source.unsplash.com/800x600/?sunrise,kashmir" alt="Sunrise over Dal Lake">
+        </div>
+      </section>
+
+      <section id="experience" class="features container">
+        <h2>What to Experience</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Shikara Rides</h3>
+            <p>Gently glide across reflective water in a traditional shikara.</p>
+          </article>
+          <article class="card">
+            <h3>Floating Gardens</h3>
+            <p>See the unique floating vegetable gardens and local life afloat.</p>
+          </article>
+          <article class="card">
+            <h3>Mughal Heritage</h3>
+            <p>Visit nearby Mughal-era gardens and historic landmarks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Plan Your Visit</h2>
+        <p>For photographers, romantic getaways, or a peaceful retreat — Dal Lake invites you. Open your calendar to dawn and bring a camera.</p>
+        <a class="btn ghost" href="#">Get tips</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Dal Lake — Capturing calm. Photos via Unsplash.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const navToggle = document.getElementById('nav-toggle');
+      const mainNav = document.getElementById('main-nav');
+      navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
+    </script>
+  </body>
+</html>
